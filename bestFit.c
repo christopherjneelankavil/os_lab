@@ -20,4 +20,6 @@ int main(){
     for(int i=0;i<processNum;i++){
         scanf("%d",&process[i]);
     }
+
+    
 }
