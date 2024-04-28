@@ -1,3 +1,9 @@
+//Create a new process and print its process id and its parent's process id in C (use fork() and wait() system call).
+#include<stdio.h>
+#include<unistd.h>
+#include<sys/wait.h>
+
+//main function
 #include<stdio.h>
 #include<unistd.h>
 #include<sys/wait.h>
