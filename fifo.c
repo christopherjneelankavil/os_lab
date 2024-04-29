@@ -24,4 +24,5 @@ int main(){
     //page replacement process
     printf("\nThe page replacement process is: \n");
     
+    
 }
