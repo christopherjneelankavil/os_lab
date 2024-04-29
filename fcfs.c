@@ -25,7 +25,7 @@ int main(){
     }
     printf("\n");
 
-    printf("Process\tBurst time\tCompile time\tWaiting time\tTurnAround Time\n");
+    printf("Process\tBurst time\tCompletion time\tWaiting time\tTurnAround Time\n");
     for(int i=0;i<totalProcess;i++){
         turnAroundTime[i]=waitTime[i]+burstTime[i];
         avgWait+=waitTime[i];
@@ -52,7 +52,7 @@ int main(){
 // P[4]: 1
 // Gantt Chart
 // P[1]-->P[2]-->P[3]-->P[4]-->
-// Process Burst time      Compile time    Waiting time    TurnAround Time
+// Process Burst time      Completion time    Waiting time    TurnAround Time
 
 // P[1]                    3                       3                       0                       3
 // P[2]                    4                       7                       3                       7
