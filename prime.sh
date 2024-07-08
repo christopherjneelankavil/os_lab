@@ -1,21 +1,18 @@
-echo "enter the number : "
+echo "enter the number: "
 read n
-((half=n/2))
-i=0
-while((half>=2))
+flag=0
+for ((i=2;i<=n/2;i++))
 do
-    if((n%half==0))
-    then
-        i=1
-        break
-    else
-        ((half--))
+    if((n%i==0))
+        then 
+            flag=1
+            break
     fi
-done 
-
-if(($i==1 && $n!=1))
-then
-    echo "not prime"
-else
-    echo "prime"
+done  
+if((flag==1))
+    then 
+        echo "The given number is not prime"
+    else 
+        echo "The given number is prime"
 fi
+            
