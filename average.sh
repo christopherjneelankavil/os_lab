@@ -3,7 +3,7 @@ read limit
 i=0
 sum=0
 while((i<=limit))
-do 
+do  
     ((sum=sum+i))
     ((i=i+1))
 done
